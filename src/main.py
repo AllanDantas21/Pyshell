@@ -1,8 +1,11 @@
+from src.validator import valid_prompt
 
 def main():
     while 42:
-        input("pyshell")
-
+        prompt = input("pyshell> ")
+        if prompt == "exit":
+            break
+        valid_prompt(prompt)
 
 if __name__ == "__main__":
     main()
