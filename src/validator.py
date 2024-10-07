@@ -6,8 +6,6 @@ def valid_quotes(prompt: str) -> bool:
         return True
     return False
 
-
 def valid_prompt(prompt: str) -> bool:
-    x = valid_quotes(prompt)
-    print(x)
-    return True
+    ret: bool = valid_quotes(prompt)
+    return ret
