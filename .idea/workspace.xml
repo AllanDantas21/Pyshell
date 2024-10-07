@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b01ddff-1687-4ee8-8634-159fa6e6fcfa" name="Changes" comment="add simple quotes validator">
-      <change afterPath="$PROJECT_DIR$/src/exec.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/validator.py" afterDir="false" />
-    </list>
+    <list default="true" id="3b01ddff-1687-4ee8-8634-159fa6e6fcfa" name="Changes" comment="add exec" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +63,7 @@
       <workItem from="1728160874224" duration="3084000" />
       <workItem from="1728238553065" duration="1944000" />
       <workItem from="1728243774588" duration="1497000" />
-      <workItem from="1728260549119" duration="662000" />
+      <workItem from="1728260549119" duration="885000" />
     </task>
     <task id="LOCAL-00001" summary="init pyshell">
       <option name="closed" value="true" />
@@ -86,7 +81,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728162627406</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add exec">
+      <option name="closed" value="true" />
+      <created>1728261436968</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728261436968</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,7 +98,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init pyshell" />
     <MESSAGE value="add simple quotes validator" />
-    <option name="LAST_COMMIT_MESSAGE" value="add simple quotes validator" />
+    <MESSAGE value="add exec" />
+    <option name="LAST_COMMIT_MESSAGE" value="add exec" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PyShell$main.coverage" NAME="main Coverage Results" MODIFIED="1728260843312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
