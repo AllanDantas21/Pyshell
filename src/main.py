@@ -3,10 +3,11 @@ from exec import simple_exec
 from env import getenv
 from my_builtins import exec_builtins
 import platform
+import os
 import sys
 
 def main():
-    env = getenv()
+    env = os.environ
 
     while 42:
         cmds = list()
