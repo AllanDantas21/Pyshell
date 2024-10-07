@@ -13,6 +13,8 @@ def exec_builtins(cmd, env):
         my_pwd()
     elif s_cmd[0] == 'cd':
         my_cd(s_cmd)
+    elif s_cmd[0] == 'export':
+        my_export(s_cmd, env)
     else:
         print("Error: Command not found")
 
@@ -32,6 +34,19 @@ def my_env(env):
         
 def my_cd(s_cmd):
     try:
+        if len(s_cmd) == 1:
+            os.chdir(os.environ['HOME'])
+            return
         os.chdir(s_cmd[1])
+    except Exception as e:
+        print(f"Error: {e}")
+
+def my_export(s_cmd, env):
+    try:
+        if len(s_cmd) == 1:
+            print("Error: No environment variable provided")
+            return
+        key, value = s_cmd[1].split("=")
+        env[key] = value
     except Exception as e:
         print(f"Error: {e}")
