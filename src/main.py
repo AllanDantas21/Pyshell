@@ -1,21 +1,20 @@
-from src.validator import valid_prompt
-from src.exec import simple_exec
+from validator import valid_prompt
+from exec import simple_exec
+from env import getenv
 import platform
 import sys
 
 def main():
-    # if platform.system() != 'Linux':
-    #     print("Este programa só pode ser executado em sistemas Linux.")
-    #     sys.exit(1)
+    env = getenv()
 
     while 42:
         cmds = list()
         prompt = input("pyshell> ")
-        if prompt == "exit":
+        if prompt.lower() == 'exit':
             break
         if not valid_prompt(prompt):
             continue
-        simple_exec(prompt)
+        simple_exec(prompt, env)
 
 if __name__ == "__main__":
     main()
