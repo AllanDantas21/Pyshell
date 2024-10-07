@@ -1,7 +1,7 @@
 from validator import valid_prompt
 from exec import simple_exec
 from env import getenv
-from my_builtins import exec_builtins
+from exec import executor
 import platform
 import os
 import sys
@@ -11,11 +11,12 @@ def main():
 
     while 42:
         cmds = list()
-        prompt = input("pyshell> ")
+        curr_path = os.getcwd().replace(os.environ['HOME'], '~')
+        prompt = input(f"{curr_path}$> ")
         if not valid_prompt(prompt):
             continue
-        exec_builtins(prompt, env)
-        # simple_exec(prompt, env)
+        executor(prompt, env)
+      
 
 if __name__ == "__main__":
     main()

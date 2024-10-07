@@ -15,6 +15,8 @@ def exec_builtins(cmd, env):
         my_cd(s_cmd)
     elif s_cmd[0] == 'export':
         my_export(s_cmd, env)
+    elif s_cmd[0] == 'unset':
+        my_unset(s_cmd, env)
     else:
         print("Error: Command not found")
 
@@ -38,6 +40,16 @@ def my_cd(s_cmd):
             os.chdir(os.environ['HOME'])
             return
         os.chdir(s_cmd[1])
+    except Exception as e:
+        print(f"Error: {e}")
+
+def my_unset(s_cmd, env):
+    try:
+        if len(s_cmd) == 1:
+            print("Error: No environment variable provided")
+            return
+        key = s_cmd[1]
+        env.pop(key)
     except Exception as e:
         print(f"Error: {e}")
 
